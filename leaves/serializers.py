@@ -3,10 +3,10 @@ from .models import Leaf
 
 
 class LeafSerializer(serializers.ModelSerializer):
-  owner = serializers.ReadOnlyField(source='owner.username')
-  is_owner = serializers.SerializerMethodField()
-  account_id = serializers.ReadOnlyField(source='owner.account.id')
-  account_image = serializers.ReadOnlyField(source='owner.account.image.url')
+  user = serializers.ReadOnlyField(source='user.username')
+  is_user = serializers.SerializerMethodField()
+  account_id = serializers.ReadOnlyField(source='user.account.id')
+  account_image = serializers.ReadOnlyField(source='user.account.image.url')
 
   def validate_image(self, value):
     if value.size > 2 * 1024 * 1024:
@@ -21,12 +21,12 @@ class LeafSerializer(serializers.ModelSerializer):
         )
     return value
 
-  def get_is_owner(self, obj):
+  def get_is_user(self, obj):
     request = self.context['request']
-    return request.user == obj.owner
+    return request.user == obj.user
   
   class Meta:
     model = Leaf
     fields = [
-      'id', 'owner', 'created_at', 'updated_at', 'loss_type', 'name', 'parent_name1', 'parent_name2', 'dob_due_date', 'weight', 'image', 'memory', 'is_owner', 'account_id', 'account_image'
+      'id', 'user', 'created_at', 'updated_at', 'loss_type', 'name', 'parent_name1', 'parent_name2', 'dob_due_date', 'weight', 'image', 'memory', 'is_user', 'account_id', 'account_image'
     ]

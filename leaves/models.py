@@ -6,7 +6,7 @@ class Leaf(models.Model):
     ('during', 'Loss during pregnancy'),
     ('at or after', 'Loss at birth or shortly after' ),
   ]
-  owner = models.ForeignKey(User, on_delete=models.CASCADE)
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
   loss_type = models.CharField(max_length=100, choices=LOSS_TYPE, blank=True)
@@ -25,4 +25,4 @@ class Leaf(models.Model):
     ordering = ['-created_at']
 
   def __str__(self):
-    return f"{self.owner}'s leaf, added on {self.created_at}"
+    return f"{self.user}'s leaf, added on {self.created_at}"
