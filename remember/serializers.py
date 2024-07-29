@@ -2,7 +2,7 @@ from rest_framework import serializers
 from remember.models import Remember
 
 
-class LikeSerializer(serializers.ModelSerializer):
+class RememberSerializer(serializers.ModelSerializer):
     """
     Serializer for the Remember model
     """
