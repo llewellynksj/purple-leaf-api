@@ -15,7 +15,12 @@ class LeafList(generics.ListCreateAPIView):
      remember_count=Count('remembered', distinct=True)
   ).order_by('-created_at')
   filter_backends = [
-     filters.OrderingFilter
+     filters.OrderingFilter,
+     filters.SearchFilter
+  ]
+  search_fields = [
+     'user__username',
+     'memory',
   ]
   ordering_fields = [
      'remember_count',
