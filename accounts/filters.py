@@ -4,6 +4,9 @@ from remember.models import Remember
 from .models import Account
 
 class AccountFilter(django_filters.FilterSet):
+  """
+  Custom filter to enable a user to filter accounts based on whether or not they have 'remembered' a leaf added by that account
+  """
   has_remembered_leaf = django_filters.BooleanFilter(method='filter_has_remembered_leaf')
 
   class Meta:
