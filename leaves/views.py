@@ -1,5 +1,6 @@
 from django.db.models import Count
 from rest_framework import generics, permissions, filters
+from django_filters.rest_framework import DjangoFilterBackend
 from .models import Leaf
 from .serializers import LeafSerializer
 from pl_api.permissions import IsOwnerOrReadOnly
@@ -16,7 +17,11 @@ class LeafList(generics.ListCreateAPIView):
   ).order_by('-created_at')
   filter_backends = [
      filters.OrderingFilter,
-     filters.SearchFilter
+     filters.SearchFilter,
+     DjangoFilterBackend,
+  ]
+  filterset_fields = [
+     'loss_type',
   ]
   search_fields = [
      'user__username',
