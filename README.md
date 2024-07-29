@@ -65,13 +65,13 @@ Careful consideration was taken in the planning stages of this project. Initial 
 
 ### **User Journey**
 
-![Image of user journey map]()
+![Image of user journey map](static/readme_assets/pl_user_journey.png)
 
 <br>
 
 ### **Database**
 
-![Image of entity relationship diagram]()
+![Image of entity relationship diagram](static/readme_assets/pl_erd.png)
 
 <br>
 
