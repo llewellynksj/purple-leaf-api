@@ -2,10 +2,15 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Leaf(models.Model):
+  """
+  Leaf model stores all information relating to a user's commemorative memory
+  Most fields are optional
+  """
   LOSS_TYPE = [
     ('during', 'Loss during pregnancy'),
     ('at or after', 'Loss at birth or shortly after' ),
   ]
+  
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)

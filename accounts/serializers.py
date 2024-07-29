@@ -3,6 +3,9 @@ from .models import Account
 
 
 class AccountSerializer(serializers.ModelSerializer):
+  """
+  Serialixer linked to Account model
+  """
   user = serializers.ReadOnlyField(source='user.username')
   is_owner = serializers.SerializerMethodField()
 

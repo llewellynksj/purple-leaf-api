@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 
 class Account(models.Model):
+  """
+  Account model stores user information
+  """
   user = models.OneToOneField(User, on_delete=models.CASCADE)
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
@@ -17,7 +20,8 @@ class Account(models.Model):
 
   def __str__(self):
       return self.user.username
-  
+
+# Automatically create account when a new user is registered
 def create_account(sender, instance, created, **kwargs):
   if created:
       Account.objects.create(user=instance)

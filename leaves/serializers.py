@@ -3,6 +3,9 @@ from .models import Leaf
 
 
 class LeafSerializer(serializers.ModelSerializer):
+  """
+  Serializer linked to the Leaf model
+  """
   user = serializers.ReadOnlyField(source='user.username')
   is_user = serializers.SerializerMethodField()
   account_id = serializers.ReadOnlyField(source='user.account.id')
