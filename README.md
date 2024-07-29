@@ -41,10 +41,19 @@ Purple Leaf is a compassionate online platform dedicated to honoring and remembe
 
 ## User Stories
 
-| User Story | Epic |
-| :--------- | :--- |
-|            |      |
-|            |      |
+| User Story                                                                                                             | Epic     |
+| :--------------------------------------------------------------------------------------------------------------------- | :------- |
+| As a user I can register on the website                                                                                | Accounts |
+| As a user I can login using my registration details                                                                    | Accounts |
+| As a registered user I can view my own account                                                                         | Accounts |
+| As a user I can edit my account and account image so I can keep my account updated                                     | Accounts |
+| As a user I can add a leaf to share my memory/experience with the community                                            | Leaves   |
+| As a user I can view other leaves by registered users so I can participate in the community                            | Leaves   |
+| As a user I can search leaves with keywords so I can read and acknowledge other users who have had similar experiences | Leaves   |
+| As a user I can mark another users leaf as remembered to acknowledge their memory has been read                        | Remember |
+| As a user I can edit my own leaves so I can correct any errors                                                         | Leaves   |
+| As a user I can delete my own leaves so I can remove any unwanted leaves                                               | Leaves   |
+| As a user I can view other users’ accounts so I can see all of the leaves they have added                              | Accounts |
 
 <br>
 
