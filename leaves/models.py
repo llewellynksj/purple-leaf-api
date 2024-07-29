@@ -18,8 +18,8 @@ class Leaf(models.Model):
   name = models.CharField(max_length=100, blank=True, null=True, help_text='Had you picked out a name or nickname?')
   parent_name1 = models.CharField(max_length=100, blank=True, null=True)
   parent_name2 = models.CharField(max_length=100, blank=True, null=True)
-  dob_due_date = models.DateField()
-  weight = models.IntegerField(help_text='kilograms')
+  dob_due_date = models.DateField(blank=True, null=True)
+  weight = models.IntegerField(help_text='kilograms', blank=True, null=True)
   image = models.ImageField(
       upload_to='images/',
       default='../default_post_rgq6aq'
