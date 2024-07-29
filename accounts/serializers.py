@@ -7,14 +7,15 @@ class AccountSerializer(serializers.ModelSerializer):
   Serialixer linked to Account model
   """
   user = serializers.ReadOnlyField(source='user.username')
-  is_owner = serializers.SerializerMethodField()
+  is_user = serializers.SerializerMethodField()
+  leaf_count = serializers.ReadOnlyField()
 
-  def get_is_owner(self, obj):
+  def get_is_user(self, obj):
       request = self.context['request']
       return request.user == obj.user
 
   class Meta:
     model = Account
     fields = [
-      'id', 'user', 'is_owner', 'created_at', 'updated_at', 'name', 'image',
+      'id', 'user', 'is_user', 'created_at', 'updated_at', 'name', 'image', 'leaf_count',
     ]
