@@ -12,28 +12,16 @@ Purple Leaf is a compassionate online platform dedicated to honoring and remembe
 
 ---
 
-### [User Experience (UX)](#user-experience-ux-1)
+### [User Stories](#user-stories-1)
 
-- [Purpose](#purpose)
-- [User Stories](#user-stories)
-  - [First Time Visitors](#first-time-visitor-goals)
-  - [Returning Visitors](#returning-visitor-goals)
-  - [Frequent Users](#frequent-visitor-goals)
+### [Database](#database-1)
 
-### [Design](#design-1)
+### [Project Structure](#project-structure-1)
 
-- [Colour Scheme](#colour-scheme)
-- [Typography](#typography)
-- [Imagery](#imagery)
-- [Wireframes](#wireframes)
-
-### [Features](#features-1)
-
-- [Existing Features](#existing-features)
-  - [Homepage](#homepage)
-  - [Next page](#next_page)
-- [Accessibility](#accessibility)
-- [Future Features](#future-features)
+- [Apps](#apps)
+  - [Accounts](#accounts)
+  - [Leaves](#leaves)
+  - [Remember](#remember)
 
 ### [Technologies](#technologies-1)
 
@@ -43,16 +31,7 @@ Purple Leaf is a compassionate online platform dedicated to honoring and remembe
 
 ### [Testing](#testing-1)
 
-- [Function Testing](#function-testing)
-- [User Story Testing](#user-story-testing)
-- [Lighthouse](#lighthouse)
-- [Validator Testing](#validator-testing)
-- [Bugs](#bugs)
-
-### [Credits](#credits-1)
-
-- [Resources](#resources)
-- [Acknowledgements](#acknowledgements)
+### [Acknowledgements](#acknowledgements-1)
 
 <br>
 
@@ -60,120 +39,62 @@ Purple Leaf is a compassionate online platform dedicated to honoring and remembe
 
 <br>
 
-## User Experience (UX)
+## User Stories
 
-### **Purpose**
-
-Purple Leaf is a compassionate online platform dedicated to honoring and remembering losses experienced during pregnancy or shortly after birth. By adding a leaf to the Tree of Remembrance, users can commemorate their loss, sharing as much or as little information as they feel comfortable with. The platform allows users to specify the type of loss, and optionally share names, dates, messages, and images that hold personal significance.
-
-Once a memory is added to the Remembrance Tree, users have the option to view another randomly selected memory from the community, fostering a supportive environment where shared experiences can bring comfort and understanding. For those who may find this overwhelming, opting out is always an option.
-
-Additionally, Purple Leaf provides links to external support groups, ensuring that users have access to further assistance during their healing journey.
-
-<br>
-
-### User Stories
-
-### **Client Goals**
-
--
-
-<br>
-
-### **First Time Visitor Goals**
-
--
-
-<br>
-
-### **Returning Visitor Goals**
-
--
-
-<br>
-
-### **Frequent Visitor Goals**
-
--
+| User Story | Epic |
+| :--------- | :--- |
+|            |      |
+|            |      |
 
 <br>
 
 ---
 
-## Design
+## Database
 
-### **Colour Scheme**
+Careful consideration was taken in the planning stages of this project. Initial user journeys were mapped out, and an ER Diagram was created.
 
-<br>
+### **User Journey**
 
-### **Typography**
-
-<br>
-
-### **Imagery**
+![Image of user journey map]()
 
 <br>
 
-### **Wireframes**
+### **Database**
 
-[Balsamiq Wireframing Software](https://balsamiq.com/) was used to create the wireframes.
-
-<details>
-<summary>Homepage (mobile)</summary>
-
-![Wireframe image of homepage design on mobile]()
-
-</details>
-<details>
-<summary>Homepage (desktop)</summary>
-
-![Wireframe image of homepage design on desktop]()
-
-</details>
+![Image of entity relationship diagram]()
 
 <br>
-
-<details>
-<summary>Next Page (mobile)</summary>
-
-![Wireframe image of next page design on mobile]()
-
-</details>
-<details>
-<summary>Next Page (desktop)</summary>
-
-![Wireframe image of next page design on desktop]()
-
-</details>
-
-<br>
-
-For a full PDF of all wireframes (mobile, tablet, desktop) click [here]().
 
 ---
 
-## Features
+## Project Structure
 
-### **Existing Features**
+### **Apps:**
+
+Purple Leaf has a total of 3 Apps. These are:
+
+- Accounts
+- Leaves
+- Remember
+
+These are outlined with their corresponding models below.
+
+#### ACCOUNTS
+
+- Holds the database for any registered users
 
 <br>
 
-### **Accessibility**
+#### LEAVES
 
-In addition to being best practice, having an accessible website is extremely high on the list of requirements for the target audience. Close attention has been paid to the following in order to ensure the site is as accessible as possible:
-
-- Clear and simple font styling, avoiding any cursive or calligraphic scripts.
-- Contrasting colour scheme, but avoiding colours that are too bold.
-- Use of semantic HTML
-- Ensuring all images have an alt description for screen readers or where the image cannot be loaded. Also ensuring that these are as descriptive as possible.
+- Holds the database for all users posted memories
 
 <br>
 
-### **Future Features**
+#### REMEMBER
 
-In the future there are features and developments that it would be useful to consider adding to create an even better user experience of this website. They include:
-
--
+- Holds the database for all acknowledgments on leaves that indicate the leaf has been read and remembered
 
 <br>
 
@@ -183,13 +104,24 @@ In the future there are features and developments that it would be useful to con
 
 ### **Languages Used**
 
-This website has been written in .
+This website has been written in Python.
 
-<br>
+### **Resources**
 
-**Frameworks, Libraries and Programs Used**
+**Resources, Frameworks, Libraries and Programs Used**
 
--
+- [Django Rest Framework](https://www.django-rest-framework.org/) - Django toolkit for building APIs
+- [Django](https://docs.djangoproject.com/en/5.0/) - Python based web framework
+- [Django Filter](https://django-filter.readthedocs.io/en/stable/) - Django-filter allows users to filter dynamically
+- [Django All Auth](https://docs.allauth.org/en/latest/) - Authentication and Registration in Django Rest Framework
+- [Django Cors Headers](https://pypi.org/project/django-cors-headers/) - Handles the server headers required for Cross-Origin Resource Sharing (CORS)
+- [Heroku](https://dashboard.heroku.com/apps) - Deployment platform
+- [Cloudinary](https://cloudinary.com/users/login) - Media storage platform
+- [Miro](https://miro.com/app/dashboard/) - Designing database diagrams
+- [ChatGPT](https://chat.openai.com/) - Troubleshooting more complex bugs
+- [Github](https://github.com/)
+- [Code Institute DRF Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRF+2021_T1/courseware/f775d54df4da44d18309888b3fe884f7/bc5fbada70104d489aa0363a03d8bda8/)
+- [Birme.net](https://www.birme.net/?target_height=320&no_resize=true&image_format=webp&quality_webp=100) - resizing images and converting to webp files for README
 
 <br>
 
@@ -207,156 +139,256 @@ The commit history can be viewed [here]()
 
 ## Deployment
 
+This project is deployed on [Heroku](https://dashboard.heroku.com/apps). Below are the steps taken.
+
+### Setup
+
+#### Prepare your IDE
+
+1. Install dj_database_url and psycopg2
+
+```
+pip3 install dj_database_url==0.5.0 psycopg2
+```
+
+2. At this point if using Cloudinary you can install now
+
+```
+pip3 install dj3-cloudinary-storage
+```
+
+3. Create your requirements.txt file
+
+```
+pip3 freeze -- local > requirements.txt
+```
+
+4. Create your Django project
+
+```
+django-admin startproject myprojectname .
+```
+
+5. Create your first project app
+
+```
+python3 manage.py startapp myappname
+```
+
+6. Add your new app to installed apps in your project settings.py
+
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myappname',
+]
+```
+
+7. Ensure all files are saved
+8. Migrate
+
+```
+python3 manage.py migrate
+```
+
+### Deployment
+
+#### Prepare Heroku
+
+1. Visit [Heroku](https://dashboard.heroku.com/apps)
+2. Select 'New' and 'Create New App'
+3. Name the app
+4. Select region and 'Create App'
+
+#### env.py file
+
+1. Create a new file called 'env.py' in the root directory of your project
+2. Add the following code:
+
+```
+import os
+
+os.environ['DATABASE_URL'] = 'paste_url_from_database_here'
+os.environ['SECRET_KEY'] = 'create_a_secret_key_here'
+```
+
+#### settings.py
+
+1. At the top of settings.py just below the Path import, add the following code:
+
+```
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
+```
+
+2. Remove the SECRET_KEY that is in settings and replace with:
+
+```
+SECRET_KEY = os.environ.get('SECRET_KEY')
+```
+
+3. Comment out the original DATABASES variable and replace with:
+
+```
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+```
+
+4. Migrate
+
+```
+python3 manage.py migrate
+```
+
+#### If using Cloudinary
+
+1. Visit [Cloudinary](https://cloudinary.com/users/login) and set up account
+2. Copy API environment variable
+3. In env.py add:
+
+```
+os.environ['CLOUDINARY_URL'] = 'your_cloudinary_api'
+```
+
+4. In settings.py add cloudinary_storage and cloudinary to installed apps
+
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
+    'myappname',
+]
+```
+
+5. Near the end of settings.py add:
+
+```
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+```
+
+#### Heroku Config Vars
+
+1. Go to your Heroku Dashboard
+2. Go to your app and select 'Settings'
+3. Click 'Add config vars'
+4. Enter the following:
+
+```
+DATABASE_URL : your_elephantsql_url
+SECRET_KEY : your_secret_key
+PORT: 8000
+DISABLE_COLLECTSTATIC : 1
+CLOUDINARY_URL : your_cloudinary_url
+```
+
+#### Templates
+
+1. In settings.py, find BASE_DIR amd add:
+
+```
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+```
+
+2. Midway down your settings.py file change the DIRS to:
+
+```
+[TEMPLATES_DIR]
+```
+
+#### Allowed Hosts
+
+1. In settings.py, add to 'Allowed Hosts':
+
+```
+'myherokuappname.herokuapp.com',
+'localhost'
+```
+
+#### Add additional files
+
+1. Create 'templates' and 'static' files
+2. Add a Procfile (ensure has an uppercase 'P'), with the following line:
+
+```
+web: gunicorn myprojectname.wsgi
+```
+
+### Deployment
+
+1. Go to Heroku
+2. Open your app and select 'Deploy'
+3. Select Github as the deployment method
+4. Find the correct repository and connect
+5. Deploy Branch
+
+When you deploy it is vital that you do not have DEBUG set to True. To overcome this while simultaneously working in the IDE and being deployed you can:
+
+1. In settings.py replace DEBUG=True with:
+
+```
+DEBUG = 'DEBUG' in os.environ
+```
+
+2. In your env.py file add:
+
+```
+os.environ['DEBUG'] = '1'
+```
+
+### Create a Superuser
+
+1. In the terminal of your IDE type the following command:
+
+```
+python3 manage.py createsuperuser
+```
+
+2. Follow the terminal instructions to set up a password
+
+<br>
+
+### Connecting to the Front-End
+
+In order to allow requests from the Front-End, additional config vars need to be added to the Heroku deployment for the API:
+
+```
+CLIENT_ORIGIN: your_front_end_url
+```
+
+N.B. Ensure the trailling slash from your URL is removed.
+
 <br>
 
 ---
 
 ## Testing
 
-Testing was performed across a range of devices, including:
-
--
-
-### **Function Testing**
-
-| Page | Test | Successfully Completed |
-| :--- | :--- | :--------------------: |
-|      |      |                        |
-|      |      |                        |
-|      |      |                        |
-|      |      |                        |
-|      |      |                        |
-|      |      |                        |
-|      |      |                        |
-
-<br>
-
-### **User Story Testing**
-
-| Client Goal | Solution | Tested & Successfully Completed |
-| :---------- | :------- | :-----------------------------: |
-|             |          |                                 |
-|             |          |                                 |
-|             |          |                                 |
-|             |          |                                 |
-|             |          |                                 |
-
-<br>
-
-| First Time Visitor Goal | Solution | Tested & Successfully Completed |
-| :---------------------- | :------- | :-----------------------------: |
-|                         |          |                                 |
-|                         |          |                                 |
-|                         |          |                                 |
-|                         |          |                                 |
-
-<br>
-
-| Returning Visitor Goal | Solution | Tested & Successfully Completed |
-| :--------------------- | :------- | :-----------------------------: |
-|                        |          |                                 |
-|                        |          |                                 |
-|                        |          |                                 |
-
-<br>
-
-| Frequent Visitor Goal | Solution | Tested & Successfully Completed |
-| :-------------------- | :------- | :-----------------------------: |
-|                       |          |                                 |
-|                       |          |                                 |
-|                       |          |                                 |
-
-<br>
-
-### **Lighthouse**
-
-For Mobile Devices
-
-<details>
-<summary>Homepage</summary>
-
-![Screenshot of Lighthouse testing for homepage on mobile devices]()
-
-</details>
-<details>
-<summary>Dates Page</summary>
-
-![Screenshot of Lighthouse testing for next page on mobile devices]()
-
-</details>
-<details>
-
-<br>
-
-For Desktop
-
-<details>
-<summary>Homepage</summary>
-
-![Screenshot of Lighthouse testing for homepage on desktop]()
-
-</details>
-<details>
-<summary>Dates Page</summary>
-
-![Screenshot of Lighthouse testing for next page on desktop]()
-
-</details>
-
-<br>
-
-### **Validator Testing**
-
-HTML
-
-<details>
-<summary>Homepage</summary>
-
-![Screenshot of WC3 testing for homepage]()
-
-</details>
-<details>
-<summary>Dates Page</summary>
-
-![Screenshot of WC3 testing for next page]()
-
-</details>
-<details>
-
-<br>
-
-CSS
-
-<details>
-<summary>Stylesheet</summary>
-
-![Screenshot of W3C Jigsaw testing for CSS Stylesheet]()
-
-</details>
-
-  <br>
-
-### **Bugs**
-
-| Raised by | Bug | Solution |
-| :-------- | :-- | :------- |
-|           |     |          |
-|           |     |          |
-|           |     |          |
-|           |     |          |
-|           |     |          |
-|           |     |          |
-
-<br>
+For all testing details visit the [TESTING]() file.
 
 ---
 
-## Credits
+## **Acknowledgements**
 
-### **Resources**
-
--
-
-<br>
-
-### **Acknowledgements**
+This API was built following the Code Institute DRF Walkthrough project
